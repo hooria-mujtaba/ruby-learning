@@ -1,10 +1,8 @@
 # ternary statement which is
 # alternate to if-else statement
  
-puts "Enter marks: "
 begin
-  # Get user input
-  marks = Integer(gets) 
+  marks = 200
 # Check if input is a valid number
 
 grade = marks < 0 || marks > 200 ? "Invalid marks" :
@@ -16,6 +14,7 @@ grade = marks < 0 || marks > 200 ? "Invalid marks" :
         marks >= 51  ? "Grade is E" : "Grade is F"
 
 puts grade
-rescue ArgumentError
+# This statement will be executed when exception occurs (user does'n follow the rules)
+rescue 
     puts "Invalid input! Please enter a numeric value."
   end
