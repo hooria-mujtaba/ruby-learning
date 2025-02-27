@@ -1,7 +1,9 @@
 # case statement 
-begin
-  marks = 200
+puts " Enter marks: "
 
+begin
+  marks=Integer(gets)
+  
   case marks
   when 0..50
     puts "Grade is F"
