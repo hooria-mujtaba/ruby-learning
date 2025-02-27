@@ -3,7 +3,7 @@ puts " Enter marks: "
 
 begin
   marks=Integer(gets)
-  
+
   case marks
   when 0..50
     puts "Grade is F"
@@ -20,14 +20,11 @@ begin
   when 181..200
     puts "Grade is A+"
 
-     # This case will be executed when input will not be in range
+  # This case will be executed when input will not be in range
   else
     puts "Invalid marks" 
   end
-     #This statement will be executed when exception occurs (user does'n follow the rules)
+#This statement will be executed when exception occurs (user does'n follow the rules)
 rescue 
   puts "Invalid input! Please enter a numeric value."
 end
-
-
-
