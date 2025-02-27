@@ -1,12 +1,34 @@
-#if statement with one condition
-#marks = 20 
-#if marks<=50 
- #   puts "Student is pass."
-#rubyb if.rb
-#end
+#if statement 
 
-#if statement with multiple conditions
-marks = 35
-if marks<=50 && marks>=20 
-     puts "Student is pass."    
-end
+     puts "Enter marks: "
+    begin
+     marks=Integer(gets)    
+     if marks < 0 || marks > 200
+      puts "Marks Invalid"
+     end
+       if marks >=180 && marks <= 200
+      puts "Student gets A+ grades"
+       end  
+      if marks >=161 && marks <= 180
+      puts "Student gets A grades"
+      end    
+      if marks >=151 && marks <= 160
+      puts "Student gets B grades"
+      end   
+      if marks >=131 && marks <= 150
+      puts "Student gets C grades"
+      end   
+      if marks >=101 && marks <= 130
+      puts "Student gets D grades"
+      end   
+      if marks >=51 && marks <= 100
+      puts "Student gets E grades"
+      end   
+      if marks >=0 && marks < 50
+      puts "Student gets F grades"
+   end
+   rescue ArgumentError
+     puts "Invalid input! Please enter a numeric value."
+    end
+    
+     
