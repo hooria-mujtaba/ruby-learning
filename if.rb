@@ -1,8 +1,7 @@
 #if statement 
 
-     puts "Enter marks: "
     begin
-     marks=Integer(gets)    
+     marks=200  
      if marks < 0 || marks > 200
       puts "Marks Invalid"
      end
@@ -27,7 +26,9 @@
       if marks >=0 && marks < 50
       puts "Student gets F grades"
    end
-   rescue ArgumentError
+
+   # This statement will be executed when exception occurs (user does'n follow the rules)
+   rescue 
      puts "Invalid input! Please enter a numeric value."
     end
     
