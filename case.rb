@@ -1,8 +1,6 @@
-puts "Enter marks: "
- # Get user input as a string
-
+# case statement 
 begin
-  marks = Integer(gets) 
+  marks = 200
 
   case marks
   when 0..50
@@ -24,8 +22,8 @@ begin
   else
     puts "Invalid marks" 
   end
-     # This will Handle the case when value will not be a numeric value
-rescue ArgumentError
+     #This statement will be executed when exception occurs (user does'n follow the rules)
+rescue 
   puts "Invalid input! Please enter a numeric value."
 end
 
