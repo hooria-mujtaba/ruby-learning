@@ -1,47 +1,50 @@
-#if else structure
+#Program to illustrate Students marks gardes using if else statement
+
+puts " Enter marks: "
 
 begin
-  marks=200
+  marks=Integer(gets)
 
-  if marks < 0 || marks > 200
-   puts "Marks Invalid"
+    if marks < 0 || marks > 200
+      puts "Marks Invalid"
   
-   else
-     if marks >=180 && marks <= 200
-   puts "Student gets A+ grades"
+         else
+          if marks >=180 && marks <= 200
+           puts "Student gets A+ grades"
      
-   else
-    if marks >=161 && marks <= 180
-   puts "Student gets A grades"
+        else
+          if marks >=161 && marks <= 180
+           puts "Student gets A grades"
       
-   else
-    if marks >=151 && marks <= 160
-   puts "Student gets B grades"
-      
-   else
-    if marks >=131 && marks <= 150
-   puts "Student gets C grades"
+        else
+          if marks >=151 && marks <= 160
+           puts "Student gets B grades"
+       
+        else
+          if marks >=131 && marks <= 150
+           puts "Student gets C grades"
      
-   else
-    if marks >=101 && marks <= 130
-   puts "Student gets D grades"
+        else
+          if marks >=101 && marks <= 130
+           puts "Student gets D grades"
      
-   else
-    if marks >=51 && marks <= 100
-   puts "Student gets E grades"
+        else
+          if marks >=51 && marks <= 100
+           puts "Student gets E grades"
      
-   else
-     marks >=0 && marks < 50
-   puts "Student gets F grades"
+        else
+          marks >=0 && marks < 50
+           puts "Student gets F grades"
 
+       end
+      end
+     end
+    end
    end
-end
-end
-end
-end
-end
-end
-# This statement will be executed when exception occurs (user does'n follow the rules)
+  end
+ end
+ 
+#This statement will be executed when exception occurs (user does'n follow the rules)
 rescue 
   puts "Invalid input! Please enter a numeric value."
- end
+end
