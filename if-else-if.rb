@@ -1,5 +1,4 @@
 #Program to illustrate Students marks gardes using case statement.
-
 puts " Enter marks: "
 
 begin
