@@ -21,8 +21,7 @@ begin
   else # marks <50
     puts "Student gets F grade"
   end
-
-  # This statement will be executed when exception occurs (user does'n follow the rules)
 rescue ArgumentError
+  #This statement will be executed when exception occurs (user does'n follow the rules)
   puts "Invalid input! Please enter a numeric value."
 end
