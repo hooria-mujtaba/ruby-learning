@@ -1,5 +1,4 @@
 #Program to illustrate Students marks gardes using if statement
-
 puts "Enter marks: "
 
 begin
