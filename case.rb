@@ -23,8 +23,7 @@ begin
     # This case will be executed when input is not in range
     puts "Invalid marks"
   end
-
-  # This statement will be executed when an exception occurs (user doesn't follow the rules)
 rescue ArgumentError
+  # This statement will be executed when an exception occurs (user doesn't follow the rules)
   puts "Invalid input! Please enter a numeric value."
 end
