@@ -1,5 +1,5 @@
 #Program to illustrate Students marks gardes using case statement.
-puts " Enter marks: "
+puts "Enter marks: "
 
 begin
   marks = Integer(gets)
