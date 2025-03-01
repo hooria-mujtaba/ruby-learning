@@ -2,7 +2,7 @@
 puts "Enter marks: "
 
 begin
-  marks = Integer(gets.chomp)
+  marks = Integer(gets)
 
   case marks
   when 0..50
@@ -23,7 +23,8 @@ begin
     # This case will be executed when input is not in range
     puts "Invalid marks"
   end
-rescue ArgumentError
+
   # This statement will be executed when an exception occurs (user doesn't follow the rules)
+rescue ArgumentError
   puts "Invalid input! Please enter a numeric value."
 end
